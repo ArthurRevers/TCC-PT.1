@@ -1,0 +1,208 @@
+html {
+    font-family: "Noto Sans SC",sans-serif;
+    background-image: url(img/img1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+  }
+
+body{
+    margin: 0;
+    transition: all ease 0.2s;
+}
+header{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+}
+.menu{
+    height: 50px;
+    width: 100%;
+    background-color: #000000db;
+    position: fixed;
+    z-index: 1000;
+}
+.slide{
+    flex: 1;
+    overflow: hidden;
+}
+.slide-width{
+    height: 100%;
+    display: flex;
+    transition: all ease 0.2s;
+}
+.slide-item{
+    width: 100%;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-buttons{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    overflow: hidden;
+    cursor: pointer;
+}
+.menu a{
+    text-decoration:none;
+    color:#fff;
+}
+.menu ul{
+    display: flex;
+    z-index: 99;
+    width: 90%;
+}
+.menu li{
+    display: flex;
+    margin: auto;
+}
+
+img:hover {
+    color: white;
+    transform: scale(1.2);
+  }
+
+li:hover {
+    color: white;
+    transform: scale(1.2)
+  }
+#sobre{
+    height: 100vh;
+}
+#inscrever{
+    height: 100vh;
+}
+#torneio{
+    height: 100vh;
+}
+#rank{
+    height: 100vh;
+}
+
+#contato{
+    height: 100vh;
+}
+#titulo{
+
+    color: #fff;
+    margin-top:55px;
+}
+.logo{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+footer{
+    color: #fff;
+    height: 110px;
+    border-top: solid;
+}
+.redes{
+    margin-top: 10px;
+    height: 50px;
+    width: 106px !important;
+    display: flex;
+}
+.copy{
+    margin-top: 10px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.redes li{
+    display: flex;
+}
+.redes ul{
+    display: flex;
+    z-index: 99;
+}
+.container{
+
+}
+.conteudofull{
+	text-align: center;
+width: 100%;
+height: 75%;
+background-color: #000000ab;
+justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+color: #fff;
+}
+
+.conteudos{
+width: 100%;
+height: 75%;
+justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.conteudo1{
+	color: #fff;
+	text-align: center;
+float: left;
+width: 75%;
+height: 30%;
+background-color: #000000ab;
+justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+color: #fff;
+
+}
+.conteudo2{
+	text-align: center;
+float: right;
+width: 75%;
+height: 30%;
+background-color: #000000ab;
+justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+color: #fff;
+
+}
+
+/* Animação */
+
+[data-anime] {
+  opacity: 0;
+  transition: .3s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="top"] {
+  transform: translate3d(0, -50px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
